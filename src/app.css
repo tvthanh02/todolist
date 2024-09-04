@@ -1,0 +1,150 @@
+.todolist__container {
+  padding: 2rem;
+  width: 80rem;
+  height: 55rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.todolist__logo {
+  color: var(--white-color);
+  font-size: 2.4rem;
+  font-weigth: bold;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todolist__insert-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.todolist__insert {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.todolist__insert input {
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 100%;
+  padding-left: 1.5rem;
+  border-radius: 5px 0 0 5px;
+}
+.todolist__insert button {
+  border: none;
+  outline: none;
+  width: 8rem;
+  height: 100%;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border-radius: 0 5px 5px 0;
+  transition: all 0.3s ease-out;
+}
+.todolist__insert button:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+.todolist__filter {
+  border-radius: 0.5rem;
+  min-width: 10rem;
+  height: 4rem;
+  overflow: hidden;
+}
+.todolist__filter select {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.todolist__filter select:hover {
+  cursor: pointer;
+}
+
+.todolist__content {
+  width: 100%;
+  flex: 1;
+}
+.tasklist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tasklist__head {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--white-color);
+}
+.tasklist__head-title {
+  font-size: 1.6rem;
+  color: var(--white-color);
+  font-weigth: bold;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tasklist__main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.todo {
+  font-size: 1.4rem;
+  color: white;
+  width: 100%;
+  height: 6rem;
+  //border: 1px solid red;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: light;
+}
+.todo:last-child {
+  border: none;
+}
+
+.todo__priority {
+  width: fit-content;
+}
+
+.todo__priority--high {
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: red;
+}
+.todo__status--done {
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--green-color);
+}
+.todo__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.todo__actions-item {
+  font-size: 1.6rem;
+}
+.todo__actions-item:hover {
+  cursor: pointer;
+}

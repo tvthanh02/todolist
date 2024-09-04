@@ -1,0 +1,30 @@
+:root {
+  // color
+  --purple: #7c43f6;
+  --blur-color: #5189fb;
+  --white-color: #fff;
+  --green-color: #00b74a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--purple);
+  background-image: linear-gradient(to right, #7c43f6, #5189fb);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
