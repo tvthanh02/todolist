@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.06);
 }
 .todolist__logo {
   color: var(--white-color);
@@ -77,6 +78,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .tasklist__head {
   width: 100%;
@@ -119,23 +121,32 @@
 
 .todo__priority {
   width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .todo__priority--high {
-  width: fit-content;
-  padding: 0.3rem 0.8rem;
-  border-radius: 0.3rem;
-  font-size: 1.2rem;
-  color: white;
   background-color: red;
 }
-.todo__status--done {
+.todo__priority--low {
+  background-color: orange;
+}
+
+.todo__status {
   width: fit-content;
   padding: 0.3rem 0.8rem;
   border-radius: 0.3rem;
   font-size: 1.2rem;
   color: white;
+}
+
+.todo__status--done {
   background-color: var(--green-color);
+}
+.todo__status--processing {
+  background-color: red;
 }
 .todo__actions {
   display: flex;
@@ -147,4 +158,11 @@
 }
 .todo__actions-item:hover {
   cursor: pointer;
+}
+.noData {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
